@@ -308,18 +308,49 @@ h3 {
     grid-row-gap: 0px;
     margin-top: 90px;
     margin-bottom: 75px;
-    background-color: yellowgreen;
 }
 
 .middle-line {
     width: 660px;
     height: 3px;
     background: rgba(113, 7, 7, 1);
+    position: absolute;
+    top: 100px;
 }
 
-#explore .container .content {
+.explore-content p {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38.5px;
+    letter-spacing: 0%;
+    text-transform: none;
+    color:rgba(255, 255, 255, 1);
+}
+
+
+.explore-text-first {
+    margin-top: 179px;
+}
+
+.explore-text-second {
+    margin-top: 24px;
+}
+
+.explore-text-third {
+    margin-top: 26px;
+}
+
+.explore-content {
     width: 660px;
-    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.explore-content h2 {
+    position: absolute;
+    top: -80px;
 }
 
 .explore-img {
