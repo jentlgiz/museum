@@ -51,8 +51,13 @@ h2 {
     color: white;
 }
 
-p {
-    color: white;
+h3 {
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 5px;
+    text-transform: uppercase;
 }
 
 /* header */
@@ -145,14 +150,75 @@ ul li {
 /* visitiing  */
 
 #visiting {
-    background-color: magenta;
     max-width: 1920px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
+    margin-top: 10px;
+}
+
+.line {
+    background-color: rgba(113, 7, 7, 1);
+    border-bottom: 3px var(--dark-red) solid;
+    width: 1440px;
+    height: 3px;
+    margin-top: -41px;
 }
 
 #visiting .container {
     max-width: 1440px;
 }
+
+#visiting .content-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 75px;
+    padding-top: 73px;
+}
+
+#visiting .container h2 {
+    color: rgba(157, 134, 101, 1);
+}
+
+.card {
+    width: 440px;
+    height: 424px;
+}
+
+.card-img {
+    margin-bottom: -10px;
+}
+
+.short-line {
+    background: rgba(113, 7, 7, 1);
+    border: 1px var(--dark-red) solid;
+    width: 300px;
+    height: 2px;
+    margin-top: -20px;
+}
+
+.card-info {
+    font-family: Roboto;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 1);
+
+}
+
+.card-info-more {
+    font-family: Roboto;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 1);
+}
+
+/* explore  */
