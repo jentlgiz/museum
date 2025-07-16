@@ -147,7 +147,7 @@ ul li {
     background-color: aqua;
 }
 
-/* visitiing  */
+/* visitiing section */
 
 #visiting {
     max-width: 1920px;
@@ -177,6 +177,7 @@ ul li {
     grid-column-gap: 60px;
     grid-row-gap: 75px;
     padding-top: 73px;
+    margin-bottom: 75.5px;
 }
 
 #visiting .container h2 {
@@ -221,18 +222,62 @@ ul li {
     color: rgba(0, 0, 0, 1);
 }
 
-/* explore  */
+/* explore  section */
 
 #explore {
    background-color: #030303;
+   display: flex;
+   justify-content: center;
 }
 
 #explore .container {
     max-width: 1440px;
-    display: flex;
-    margin-top: 75.5px;
+    max-height: 865px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 90px;
+    margin-bottom: 75px;
+}
+
+.middle-line {
+    width: 660px;
+    height: 3px;
+    opacity: 1;
+    background: rgba(113, 7, 7, 1);
 }
 
 #explore .container .content {
-    background-color: aqua;
+    width: 660px;
+    background-color: blueviolet;
 }
+
+.explore-img {
+    display: flex;
+    height: 700px;
+    background-color: palevioletred;
+    position: relative;
+}
+
+.explore-img-before {
+    background-image: url(../museum-fixed/assets/images/before.jpg);
+    height: 700px;
+    width: 440px;
+    position: absolute;
+}
+
+.explore-img-after {
+    background-image: url(../museum-fixed/assets/images/after.jpg);
+    height: 700px;
+    width: 720px;
+}
+
+.explore-slider {
+    position: absolute;
+    right: 260px;
+    z-index: 2;
+}
+
+/* video section */
