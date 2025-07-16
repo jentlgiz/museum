@@ -123,13 +123,14 @@ h3 {
     height: 750px;
     width: 598px;
     padding-top: 85px;
+    position: relative;
 }
 
-.content-section h2 {
+#welcome .content-section h2 {
     width: 600px;
 }
 
-.content-section p {
+#welcome .content-section p {
     font-family: Roboto;
     font-weight: 300;
     font-size: 28px;
@@ -137,6 +138,8 @@ h3 {
     letter-spacing: 2px;
     color: rgba(255, 255, 255, 1);
     text-transform: none;
+    position: absolute;
+    top: 358px;
 }
 
 .content-section button {
@@ -151,6 +154,8 @@ h3 {
     color: rgba(255, 255, 255, 1);
     appearance: none;
     cursor: pointer;
+    position: absolute;
+    top: 461px;
 }
 
 .content-section button:hover {
@@ -273,9 +278,7 @@ h3 {
     font-size: 22px;
     line-height: 100%;
     letter-spacing: 0%;
-    margin-top: 10px;
-    color: rgba(0, 0, 0, 1);
-
+    padding-top: 12px;
 }
 
 .card-info-more {
@@ -284,8 +287,7 @@ h3 {
     font-size: 18px;
     line-height: 100%;
     letter-spacing: 0%;
-    margin-top: 15px;
-    color: rgba(0, 0, 0, 1);
+    padding-top: 14px;
 }
 
 /* explore  section */
@@ -306,12 +308,12 @@ h3 {
     grid-row-gap: 0px;
     margin-top: 90px;
     margin-bottom: 75px;
+    background-color: yellowgreen;
 }
 
 .middle-line {
     width: 660px;
     height: 3px;
-    opacity: 1;
     background: rgba(113, 7, 7, 1);
 }
 
