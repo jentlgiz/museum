@@ -41,14 +41,18 @@ h1 {
     color: white;
 }
 
-.content-container {
-    max-width: 1440px;
-    max-height: 150px;
-    padding: 16px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+h2 {
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: white;
+}
+
+p {
+    color: white;
 }
 
 /* header */
@@ -57,7 +61,19 @@ h1 {
     background-color: #030303;
 }
 
-.logo {
+.header-top {
+    max-width: 1440px;
+    max-height: 150px;
+    padding: 16px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 58px;
+    padding-bottom: 59px;
+}
+
+.header-logo {
     display: flex;
     align-items: center;
     letter-spacing: 5px;
@@ -65,12 +81,9 @@ h1 {
     height: 33px;
 }
 
-nav {
-    background-color: green;
-}
-
-nav ul {
+.header-nav-menu {
     display: flex;
+    color: white;
 }
 
 ul li {
@@ -81,4 +94,64 @@ ul li {
 
 #welcome {
     background-color: #030303;
+    max-width: 1920px;
+    max-height: 810px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+#welcome .container {
+    max-width: 1440px;
+    height: 810px;
+    display: flex;
+    justify-content: center;
+}
+
+#welcome .content-section {
+    background-color: #030303;
+    height: 750px;
+    width: 440px;
+}
+
+#welcome .img-section {
+    background-color: #030303;
+    display: flex;
+    width: 1000px;
+    height: 750px;
+    background:  linear-gradient(to left, transparent, rgba(0, 0.5, 0)), url("../museum-fixed/assets/images/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.slider-section {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    width: 600px;
+    background: green;
+    position: absolute;
+    left: 400px;
+    bottom: -60px;
+}
+
+.slider-num {
+    display: flex;
+    background-color: aqua;
+}
+
+/* #welcome .container {
+    display: flex;
+}
+
+/* #welcome .content {
+} */
+
+/* #welcome .content-img {
+    background: url(../museum-fixed/assets/images/1.jpg);
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 750px;
+} */
