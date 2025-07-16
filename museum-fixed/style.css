@@ -117,14 +117,66 @@ h3 {
     max-width: 1440px;
     height: 810px;
     display: flex;
-    justify-content: center;
 }
 
 #welcome .content-section {
-    background-color: #030303;
     height: 750px;
-    width: 440px;
+    width: 598px;
+    padding-top: 85px;
 }
+
+.content-section h2 {
+    width: 600px;
+}
+
+.content-section p {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 1);
+    text-transform: none;
+}
+
+.content-section button {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    width: 360px;
+    height: 75px;
+    background-color: rgba(113, 7, 7, 1);
+    color: rgba(255, 255, 255, 1);
+    appearance: none;
+    cursor: pointer;
+}
+
+.content-section button:hover {
+    background-color: rgba(157, 134, 101, 1);
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #welcome .img-section {
     background-color: #030303;
@@ -135,6 +187,7 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    background-position: 100%;
 }
 
 .slider-section {
@@ -144,7 +197,7 @@ h3 {
     width: 600px;
     background: green;
     position: absolute;
-    left: 400px;
+    left: 302px;
     bottom: -60px;
 }
 
