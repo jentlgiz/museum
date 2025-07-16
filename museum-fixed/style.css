@@ -142,16 +142,17 @@ ul li {
     background-color: aqua;
 }
 
-/* #welcome .container {
+/* visitiing  */
+
+#visiting {
+    background-color: magenta;
+    max-width: 1920px;
+    margin: 0 auto;
     display: flex;
+    flex-direction: column;
+    /* align-items: center; */
 }
 
-/* #welcome .content {
-} */
-
-/* #welcome .content-img {
-    background: url(../museum-fixed/assets/images/1.jpg);
-    background-repeat: no-repeat;
-    width: 1000px;
-    height: 750px;
-} */
+#visiting .container {
+    max-width: 1440px;
+}
