@@ -422,26 +422,27 @@ h3 {
     vertical-align: middle;
 }
 
+/* .video-content {
+    background-color: rgb(106, 56, 176);
+} */
+
 .more-video-content {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+    padding-top: 35px;
 }
 
 .video-slider {
-    background-color: red;
     display: flex;
     justify-content: center;
     height: 20px;
+    padding-top: 10px;
+    padding-bottom: 65px;
 }
 
 .video-slider-pagin {
-    background-color: aquamarine;
     width: 200px;
     display: flex;
     justify-content: space-between;
-}
-
-::-webkit-media-controls {
-  display:none !important;
 }
