@@ -1,8 +1,17 @@
 /* general */
 
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 html {
-  box-sizing: border-box;
   scroll-behavior: smooth;
+  width: 100vw;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow-x: hidden;
 }
 
 a,
@@ -15,6 +24,12 @@ ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+	margin-bottom: 0.5rem;
+	display: block;
 }
 
 p {
@@ -70,7 +85,6 @@ h3 {
 .header-top {
     max-width: 1440px;
     max-height: 150px;
-    padding: 16px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -89,7 +103,7 @@ h3 {
 
 .header-nav-menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     color: white;
     width: 775px;
     height: 26px;
@@ -422,10 +436,6 @@ h3 {
     vertical-align: middle;
 }
 
-/* .video-content {
-    background-color: rgb(106, 56, 176);
-} */
-
 .more-video-content {
     display: flex;
     justify-content: space-between;
@@ -458,20 +468,24 @@ h3 {
 
 #gallery .container {
     max-width: 1440px;
+    position: relative;
 }
-
-/*
-.gallery-heading {
-    background-color: greenyellow;
-} */
 
 #gallery .content {
     max-height: 2125px;
-    background-color: red;
-display: grid;
+    display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-template-rows: repeat(4, 1fr);
-grid-column-gap: 15px;
-grid-row-gap: 10px;
+grid-column-gap: 20px;
+grid-row-gap: 50px;
 overflow: hidden;
+padding-top: 15px;
+}
+
+.gallery-gradient {
+    position: absolute;
+    bottom: 0px;
+    width: 1440px;
+    height: 360px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
 }
