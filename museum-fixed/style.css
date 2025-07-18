@@ -537,18 +537,16 @@ p {
 /* tickets section */
 
 #tickets .container {
-    background-color: palevioletred;
     position: relative;
     padding-top: 75px;
     padding-bottom: 75px;
 }
 
 #tickets h2 {
-    background-color: var(--font-gold);
+    color: var(--font-gold);
 }
 
 .tickets-content {
-    background-color: greenyellow;
     display: grid;
     grid-template-columns: 6fr 4fr 3fr;
     grid-template-rows: 1fr;
@@ -563,10 +561,13 @@ p {
     width: 720px;
 }
 
-
 /* parallax section */
 
 #parallax .background-container {
     background-image: url(./assets/images/parallax.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 400px;
+    background-position-x: left;
+    background-position-y: 71%;
 }
