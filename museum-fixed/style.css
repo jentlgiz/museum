@@ -112,16 +112,21 @@ p {
 .logo-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 199px;
     height: 33px;
     align-items: center;
     letter-spacing: 5px;
+    background-color: rgb(31, 31, 2);
+    padding-bottom: 7px;
 }
 
 .logo {
     width: 49px;
     height: 26px;
     background-image: url(./assets/logo.svg);
+    background-color: rgb(2, 10, 31);
+    margin-bottom: 15px;
 }
 
 #header .container {
@@ -164,7 +169,7 @@ p {
 
 #welcome .container {
     display: flex;
-    padding-top: 50px;
+    padding-top: 52px;
     padding-bottom: 60px;
 }
 
@@ -244,7 +249,7 @@ p {
 
 .welcome-text {
     position: absolute;
-    top: 360px;
+    top: 358px;
     width: 600px;
     font-weight: 300;
     font-size: 28px;
@@ -255,7 +260,7 @@ p {
 
 #welcome button {
     position: absolute;
-    top: 465px;
+    top: 463px;
     border-radius: 10px;
     width: 360px;
     height: 75px;
