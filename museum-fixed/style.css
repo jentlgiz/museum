@@ -550,9 +550,45 @@ p {
     display: grid;
     grid-template-columns: 6fr 4fr 3fr;
     grid-template-rows: 1fr;
-    grid-column-gap: 0px;
+    grid-column-gap: 50px;
     grid-row-gap: 0px;
     padding-top: 100px;
+}
+
+.tickets-content__box {
+    background-color: greenyellow;
+}
+
+.tickets-content__box p {
+font-weight: 700;
+font-size: 28px;
+line-height: 100%;
+letter-spacing: 0%;
+}
+
+.tickets-content__box fieldset {
+    background-color: mediumaquamarine;
+    height: 211px;
+    width: 270px;
+}
+
+.tickets-content__type  {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tickets-content__type label {
+    font-family: Roboto;
+font-weight: 300;
+font-size: 22px;
+line-height: 100%;
+letter-spacing: 0%;
+}
+
+.tickets-content__widget {
+    background-color: plum;
 }
 
 .tickets-content__img {
@@ -570,4 +606,25 @@ p {
     height: 400px;
     background-position-x: left;
     background-position-y: 71%;
+}
+
+/* contacts section */
+
+#contacts .background-container {
+    background-color: hotpink;
+    position: relative;
+}
+
+#contacts h2 {
+    color: var(--font-gold);
+}
+
+#contacts .container {
+    padding-top: 75px;
+}
+
+.contacts-content {
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
 }
