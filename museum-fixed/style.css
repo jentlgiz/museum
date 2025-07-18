@@ -117,7 +117,6 @@ p {
     height: 33px;
     align-items: center;
     letter-spacing: 5px;
-    background-color: rgb(31, 31, 2);
     padding-bottom: 7px;
 }
 
@@ -125,7 +124,6 @@ p {
     width: 49px;
     height: 26px;
     background-image: url(./assets/logo.svg);
-    background-color: rgb(2, 10, 31);
     margin-bottom: 15px;
 }
 
@@ -182,7 +180,7 @@ p {
     background-color: var(--bg-dark);
 }
 
-.welcome-tagline {
+.welcome-content__tagline {
     width: 598px;
     height: 388px;
 }
@@ -200,46 +198,6 @@ p {
     z-index: -1;
 }
 
-.slider {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 120px;
-    width: 600px;
-    background-color: var(--bg-dark);
-    position: absolute;
-    bottom: 0px;
-    left: 1080px;
-}
-
-.slider__num {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 22px;
-    line-height: 40px;
-    vertical-align: middle;
-    text-transform: uppercase;
-    width: 76px;
-    height: 40px;
-    color: rgba(255, 255, 255, 1);
-}
-
-.slider__carousel {
-    display: flex;
-}
-
-.slider__carousel div {
-    margin-right: 12px;
-    margin-left: 13px;
-}
-
-.slider__tap {
-    display: flex;
-    justify-content: space-around;
-    width: 80px;
-    height: 8px;
-}
-
 #welcome h2 {
     width: 600px;
     position: absolute;
@@ -247,7 +205,7 @@ p {
     top: 150px;
 }
 
-.welcome-text {
+.welcome-content__text {
     position: absolute;
     top: 358px;
     width: 600px;
@@ -258,7 +216,7 @@ p {
     color: var(--white);
 }
 
-#welcome button {
+.welcome-content__button {
     position: absolute;
     top: 463px;
     border-radius: 10px;
@@ -276,14 +234,68 @@ p {
     vertical-align: middle;
 }
 
-#welcome button:hover {
+.welcome-content__button:hover {
     background-color: rgba(157, 134, 101, 1);
     transition: 0.5s;
 }
 
+.welcome-slider {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 120px;
+    width: 600px;
+    background-color: var(--bg-dark);
+    position: absolute;
+    bottom: 0px;
+    left: 1080px;
+}
+
+.welcome-slider__num {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 22px;
+    line-height: 40px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    width: 76px;
+    height: 40px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.welcome-slider__carousel {
+    display: flex;
+}
+
+.welcome-slider__carousel div {
+    margin-right: 12px;
+    margin-left: 13px;
+}
+
+.welcome-slider__tap {
+    display: flex;
+    justify-content: space-around;
+    width: 80px;
+    height: 8px;
+}
+
 /* visitiing section */
+
+#visit h2 {
+    color: var(--font-gold);
+}
+
+.visit-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 75px;
+}
+
+
 /*
-#visiting {
+#visit {
     max-width: 1920px;
     margin: 0 auto;
     display: flex;
@@ -314,7 +326,7 @@ p {
     margin-bottom: 75.5px;
 }
 
-#visiting .container h2 {
+#visit h2 {
     color: rgba(157, 134, 101, 1);
 }
 
