@@ -281,92 +281,88 @@ p {
 
 /* visitiing section */
 
+#visit {
+    position: relative;
+}
+
+#visit .container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
 #visit h2 {
     color: var(--font-gold);
 }
 
-.visit-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 60px;
-    grid-row-gap: 75px;
-}
-
-
-/*
-#visit {
-    max-width: 1920px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-}
-
 .line {
+    position: absolute;
+    top: 190px;
     background-color: rgba(113, 7, 7, 1);
     border-bottom: 3px var(--dark-red) solid;
     width: 1440px;
     height: 3px;
-    margin-top: -41px;
 }
 
-#visiting .container {
-    max-width: 1440px;
-}
-
-#visiting .content-section {
+.visit-content {
+    position: absolute;
+    top: 268px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 60px;
     grid-row-gap: 75px;
-    padding-top: 73px;
-    margin-bottom: 75.5px;
+    padding-bottom: 75px;
 }
 
-#visit h2 {
-    color: rgba(157, 134, 101, 1);
-}
-
-.card {
+.visit-content__card {
+    position: relative;
     width: 440px;
     height: 424px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.card-img {
-    margin-bottom: -10px;
+.visit-content h3 {
+    position: absolute;
+    top: 310px;
 }
 
 .short-line {
+    position: absolute;
+    top: 355px;
     background: rgba(113, 7, 7, 1);
     border: 1px var(--dark-red) solid;
     width: 300px;
     height: 2px;
-    margin-top: -20px;
+    transition: 0.5s;
 }
 
-.card-info {
-    font-family: Roboto;
+.visit-content__card:hover .short-line {
+    width: 100%;
+}
+
+.visit-content__card-info, .visit-content__card-info-more {
     font-weight: 200;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.visit-content__card-info {
     font-size: 22px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    padding-top: 12px;
+    position: absolute;
+    top: 370px;
 }
 
-.card-info-more {
-    font-family: Roboto;
-    font-weight: 200;
+.visit-content__card-info-more {
     font-size: 18px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    padding-top: 14px;
-} */
+    text-transform: capitalize;
+}
 
 /* explore  section */
-/* 
+
+
+/*
 #explore {
    background-color: #030303;
    display: flex;
