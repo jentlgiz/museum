@@ -492,8 +492,11 @@ p {
 
 /* gallery section */
 
-#gallery .background-container {
+#gallery {
     background: var(--bg-dark);
+}
+
+#gallery .background-container {
     padding-top: 75px;
 }
 
@@ -611,8 +614,9 @@ letter-spacing: 0%;
 /* contacts section */
 
 #contacts .background-container {
-    background-color: hotpink;
     position: relative;
+    padding-bottom: 75px;
+    background-color: palegreen;
 }
 
 #contacts h2 {
@@ -624,7 +628,28 @@ letter-spacing: 0%;
 }
 
 .contacts-content {
-    background-color: red;
     display: flex;
     justify-content: space-around;
+    padding-top: 105px;
+}
+
+.contacts-content__list p {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.contacts-content__title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+/* footer  */
+
+#footer {
+    background-color: var(--bg-dark);
+    max-height: 392px;
 }
