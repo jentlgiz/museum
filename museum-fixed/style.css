@@ -282,6 +282,7 @@ p {
 /* visitiing section */
 
 #visit {
+    height: 1266px;
     position: relative;
 }
 
@@ -361,24 +362,75 @@ p {
 
 /* explore  section */
 
-
-/*
 #explore {
-   background-color: #030303;
-   display: flex;
-   justify-content: center;
+    background: var(--bg-dark);
 }
 
 #explore .container {
-    max-width: 1440px;
-    max-height: 865px;
+    height: 865px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    margin-top: 90px;
-    margin-bottom: 75px;
+    padding-top: 89px;
+}
+
+.explore-content {
+    position: relative;
+    max-width: 660px;
+    height: 500px;
+    padding-top: 60px;
+}
+
+.explore-content__text {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38.5px;
+    letter-spacing: 0%;
+    text-transform: none;
+    color:rgba(255, 255, 255, 1);
+    margin-top: 25px;
+}
+
+.explore-content__text-wrapper {
+    position: absolute;
+    top: 155px;
+}
+
+#explore h2 {
+    position: absolute;
+    top: -15px;
+}
+
+.explore-content__img {
+    max-height: 700px;
+    position: relative;
+}
+
+.explore-img__before {
+    background-image: url(../museum-fixed/assets/images/before.jpg);
+    height: 700px;
+    width: 440px;
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+}
+
+.explore-img__after {
+    background-image: url(../museum-fixed/assets/images/after.jpg);
+    height: 700px;
+    width: 720px;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.explore-img__slider {
+    z-index: 3;
+    position: absolute;
+    left: 420px;
 }
 
 .middle-line {
@@ -389,155 +441,89 @@ p {
     top: 100px;
 }
 
-.explore-content p {
-    font-family: Roboto;
-    font-weight: 300;
-    font-size: 22px;
-    line-height: 38.5px;
-    letter-spacing: 0%;
-    text-transform: none;
-    color:rgba(255, 255, 255, 1);
+/* video section */
+
+#video h2 {
+    color: var(--font-gold);
 }
 
-
-.explore-text-first {
-    margin-top: 179px;
-}
-
-.explore-text-second {
-    margin-top: 24px;
-}
-
-.explore-text-third {
-    margin-top: 26px;
-}
-
-.explore-content {
-    width: 660px;
+.video-content {
     display: flex;
     flex-direction: column;
-    position: relative;
+    justify-content: space-evenly;
+    padding-top: 73px;
+    padding-bottom: 75px;
 }
 
-.explore-content h2 {
-    position: absolute;
-    top: -80px;
-}
-
-.explore-img {
-    display: flex;
-    height: 700px;
-    background-color: palevioletred;
-    position: relative;
-}
-
-.explore-img-before {
-    background-image: url(../museum-fixed/assets/images/before.jpg);
-    height: 700px;
-    width: 440px;
-    position: absolute;
-}
-
-.explore-img-after {
-    background-image: url(../museum-fixed/assets/images/after.jpg);
-    height: 700px;
-    width: 720px;
-}
-
-.explore-slider {
-    position: absolute;
-    right: 260px;
-    z-index: 2;
-} */
-
-/* video section */
-/* 
-#video {
-    display: flex;
-    justify-content: center;
-}
-
-#video .container {
-    max-width: 1440px;
-    display: flex;
-    justify-content: center;
-}
-
-.video-heading {
-    color: rgba(157, 134, 101, 1);
-    font-family: Forum;
-    font-weight: 400;
-    font-size: 80px;
-    line-height: 90px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-}
-
-.content-title {
+.video-content__title {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 77px;
 }
 
-.video-text {
-    color: rgba(0, 0, 0, 1);
-    width: 720px;
-    max-height: 90px;
-    text-transform: none;
-    font-family: Roboto;
+.video-content__text {
+    max-width: 720px;
     font-weight: 300;
     font-size: 22px;
     line-height: 38.5px;
     letter-spacing: 0%;
     vertical-align: middle;
+    padding-top: 10px;
 }
 
-.more-video-content {
+.video-content__more-mp4 {
+    padding-top: 34px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
-    padding-top: 35px;
 }
 
-.video-slider {
+.video-content__slider {
     display: flex;
     justify-content: center;
-    height: 20px;
-    padding-top: 10px;
-    padding-bottom: 65px;
+    align-items: center;
 }
 
-.video-slider-pagin {
+.video-content__slider-pagin {
     width: 200px;
     display: flex;
     justify-content: space-between;
-} */
+    padding-top: 40px;
+}
 
 /* gallery section */
-/* 
-#gallery {
-    background-color: #030303;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+
+#gallery .background-container {
+    background: var(--bg-dark);
+    padding-top: 75px;
 }
 
 #gallery .container {
-    max-width: 1440px;
     position: relative;
 }
 
-#gallery .content {
-    max-height: 2125px;
-    display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(4, 1fr);
-grid-column-gap: 20px;
-grid-row-gap: 50px;
-overflow: hidden;
-padding-top: 15px;
+.gallery-content {
+    height: 2035px;
+    overflow: hidden;
+    column-count: 3;
+    column-gap: 2px;
+    column-width: 30%;
+    padding-top: 76px;
+}
+
+.gallery-content__column-1,
+.gallery-content__column-2,
+.gallery-content__column-3 {
+    height: 2035px;
+    overflow: hidden;
+}
+
+.gallery-content__column-1,
+.gallery-content__column-3 {
+    padding-top: 55px;
+}
+
+.gallery-content img {
+    padding-bottom: 20px;
 }
 
 .gallery-gradient {
@@ -546,4 +532,41 @@ padding-top: 15px;
     width: 1440px;
     height: 360px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
-} */
+}
+
+/* tickets section */
+
+#tickets .container {
+    background-color: palevioletred;
+    position: relative;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+#tickets h2 {
+    background-color: var(--font-gold);
+}
+
+.tickets-content {
+    background-color: greenyellow;
+    display: grid;
+    grid-template-columns: 6fr 4fr 3fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding-top: 100px;
+}
+
+.tickets-content__img {
+    background-image: url(./assets/images/ticket-section-img.jpg);
+    height: 550px;
+    width: 720px;
+}
+
+
+/* parallax section */
+
+#parallax .background-container {
+    background-image: url(./assets/images/parallax.jpg);
+    height: 400px;
+}
