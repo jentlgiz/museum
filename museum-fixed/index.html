@@ -317,9 +317,10 @@
                 <div class="line"></div>
                 <div class="tickets-content">
                     <div class="tickets-content__img"></div>
-                    <div class="tickets-content__type">
+                    <div class="tickets-content__box">
                         <fieldset>
-                            <legend>Ticket Type</legend>
+                          <p>Ticket Type</p>
+                          <div class="tickets-content__type">
                             <div>
                                 <input type="radio" id="first-type" value="" checked />
                                 <label for="first-type">Permanent exhibition</label>
@@ -330,6 +331,7 @@
                             <div>
                                 <input type="radio" id="third-type" value="" />
                                 <label for="third-type">Combined Admission</label>
+                            </div>
                             </div>
                         </fieldset>
                     </div>
@@ -348,15 +350,49 @@
             </div>
         </section>
         <section id="parallax">
-            <div class="background-container"></div>
+            <div class="background-container">
             <div class="container"></div>
+            </div>
         </section>
         <section id="contacts">
-            <div class="background-container"></div>
-            <div class="container"></div>
+            <div class="background-container">
+            <div class="container">
+              <h2>contacts</h2>
+              <div class="line"></div>
+              <div class="contacts-content">
+                <div class="contacts-content__list">
+                  <p class="contacts-content__title">Palais Royal Musee du Louvre</p>
+                  <p>address: 75001 Paris, France</p>
+                  <p>phone: +33(0) 1 40 20 50 50</p>
+                  <p>mail: info@louvre.fr</p>
+                </div>
+                <img src="./assets/images/map.png" alt="">
+              </div>
+            </div>
+            </div>
         </section>
     </main>
-    <footer>
+    <footer id="footer">
+      <div class="background-container">
+      <div class="container">
+        <div class="logo-wrapper">
+            <div class="logo"></div>
+            <h1>louvre</h1>
+          </div>
+        <nav class="header-nav">
+            <ul class="header-nav__list">
+              <li><a href="#visit">Visiting</a></li>
+              <li><a href="#explore">Explore</a></li>
+              <li><a href="#video">Video</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#tickets">Tickets</a></li>
+              <li><a href="#contacts">Contacts</a></li>
+            </ul>
+          </nav>
+        <div class="footer-socials"></div>
+      </div>
+      <div class="footer-line"></div>
+    </div>
     </footer>
   </body>
 </html>

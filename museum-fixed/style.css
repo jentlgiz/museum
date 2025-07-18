@@ -492,8 +492,11 @@ p {
 
 /* gallery section */
 
-#gallery .background-container {
+#gallery {
     background: var(--bg-dark);
+}
+
+#gallery .background-container {
     padding-top: 75px;
 }
 
@@ -537,24 +540,58 @@ p {
 /* tickets section */
 
 #tickets .container {
-    background-color: palevioletred;
     position: relative;
     padding-top: 75px;
     padding-bottom: 75px;
 }
 
 #tickets h2 {
-    background-color: var(--font-gold);
+    color: var(--font-gold);
 }
 
 .tickets-content {
-    background-color: greenyellow;
     display: grid;
     grid-template-columns: 6fr 4fr 3fr;
     grid-template-rows: 1fr;
-    grid-column-gap: 0px;
+    grid-column-gap: 50px;
     grid-row-gap: 0px;
     padding-top: 100px;
+}
+
+.tickets-content__box {
+    background-color: greenyellow;
+}
+
+.tickets-content__box p {
+font-weight: 700;
+font-size: 28px;
+line-height: 100%;
+letter-spacing: 0%;
+}
+
+.tickets-content__box fieldset {
+    background-color: mediumaquamarine;
+    height: 211px;
+    width: 270px;
+}
+
+.tickets-content__type  {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tickets-content__type label {
+    font-family: Roboto;
+font-weight: 300;
+font-size: 22px;
+line-height: 100%;
+letter-spacing: 0%;
+}
+
+.tickets-content__widget {
+    background-color: plum;
 }
 
 .tickets-content__img {
@@ -563,10 +600,56 @@ p {
     width: 720px;
 }
 
-
 /* parallax section */
 
 #parallax .background-container {
     background-image: url(./assets/images/parallax.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 400px;
+    background-position-x: left;
+    background-position-y: 71%;
+}
+
+/* contacts section */
+
+#contacts .background-container {
+    position: relative;
+    padding-bottom: 75px;
+    background-color: palegreen;
+}
+
+#contacts h2 {
+    color: var(--font-gold);
+}
+
+#contacts .container {
+    padding-top: 75px;
+}
+
+.contacts-content {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 105px;
+}
+
+.contacts-content__list p {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.contacts-content__title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+/* footer  */
+
+#footer {
+    background-color: var(--bg-dark);
+    max-height: 392px;
 }
