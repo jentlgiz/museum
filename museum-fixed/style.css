@@ -366,30 +366,71 @@ p {
     background: var(--bg-dark);
 }
 
-
-.explore-content {
-
-}
-
-
-
-/*
-#explore {
-   background-color: #030303;
-   display: flex;
-   justify-content: center;
-}
-
 #explore .container {
-    max-width: 1440px;
-    max-height: 865px;
+    height: 865px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    margin-top: 90px;
-    margin-bottom: 75px;
+    padding-top: 89px;
+}
+
+.explore-content {
+    position: relative;
+    max-width: 660px;
+    height: 500px;
+    padding-top: 60px;
+}
+
+.explore-content__text {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38.5px;
+    letter-spacing: 0%;
+    text-transform: none;
+    color:rgba(255, 255, 255, 1);
+    margin-top: 25px;
+}
+
+.explore-content__text-wrapper {
+    position: absolute;
+    top: 155px;
+}
+
+#explore h2 {
+    position: absolute;
+    top: -15px;
+}
+
+.explore-content__img {
+    max-height: 700px;
+    position: relative;
+}
+
+.explore-img__before {
+    background-image: url(../museum-fixed/assets/images/before.jpg);
+    height: 700px;
+    width: 440px;
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+}
+
+.explore-img__after {
+    background-image: url(../museum-fixed/assets/images/after.jpg);
+    height: 700px;
+    width: 720px;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.explore-img__slider {
+    z-index: 3;
+    position: absolute;
+    left: 420px;
 }
 
 .middle-line {
@@ -400,56 +441,12 @@ p {
     top: 100px;
 }
 
-.explore-content p {
-    font-family: Roboto;
-    font-weight: 300;
-    font-size: 22px;
-    line-height: 38.5px;
-    letter-spacing: 0%;
-    text-transform: none;
-    color:rgba(255, 255, 255, 1);
-}
-
-.explore-content {
-    width: 660px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.explore-content h2 {
-    position: absolute;
-    top: -80px;
-}
-
-.explore-img {
-    display: flex;
-    height: 700px;
-    background-color: palevioletred;
-    position: relative;
-}
-
-.explore-img-before {
-    background-image: url(../museum-fixed/assets/images/before.jpg);
-    height: 700px;
-    width: 440px;
-    position: absolute;
-}
-
-.explore-img-after {
-    background-image: url(../museum-fixed/assets/images/after.jpg);
-    height: 700px;
-    width: 720px;
-}
-
-.explore-slider {
-    position: absolute;
-    right: 260px;
-    z-index: 2;
-} */
-
 /* video section */
-/* 
+
+
+
+
+/*
 #video {
     display: flex;
     justify-content: center;
