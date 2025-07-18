@@ -282,6 +282,7 @@ p {
 /* visitiing section */
 
 #visit {
+    height: 1266px;
     position: relative;
 }
 
@@ -361,6 +362,14 @@ p {
 
 /* explore  section */
 
+#explore {
+    background: var(--bg-dark);
+}
+
+
+.explore-content {
+
+}
 
 
 
@@ -399,19 +408,6 @@ p {
     letter-spacing: 0%;
     text-transform: none;
     color:rgba(255, 255, 255, 1);
-}
-
-
-.explore-text-first {
-    margin-top: 179px;
-}
-
-.explore-text-second {
-    margin-top: 24px;
-}
-
-.explore-text-third {
-    margin-top: 26px;
 }
 
 .explore-content {
