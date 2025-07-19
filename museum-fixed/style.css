@@ -604,6 +604,12 @@ p {
     letter-spacing: 0%;
 }
 
+.tickets-content__widget-type {
+    background-color: rgb(64, 215, 64);
+    width: 150px;
+    height: 91px;
+}
+
 .tickets-content__widget-button {
     width: 175px;
     height: 50px;
@@ -666,6 +672,16 @@ p {
     display: flex;
     justify-content: space-around;
     padding-top: 105px;
+    background-color: sienna;
+}
+
+.contacts-content__list {
+    background-color: lawngreen;
+    width: 282px;
+    height: 244px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .contacts-content__list p {
@@ -686,5 +702,75 @@ p {
 
 #footer {
     background-color: var(--bg-dark);
+    color: white;
     max-height: 392px;
+}
+
+#footer .container {
+    display: flex;
+}
+
+.footer__socials {
+    background-color: rgb(121, 20, 20);
+}
+
+.footer__socials ul {
+    /* background-color: rgb(24, 127, 68); */
+    width: 336px;
+    height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-end;
+}
+
+.footer__socials ul li {
+    display: inline;
+}
+
+.footer__socials div {
+height: 48px;
+  width: 48px;
+  border-radius: 1px;
+  border-color: rgba(102, 102, 102, 1);
+}
+
+.youtube {
+    background-image: url(./assets/youtube.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 1s;
+}
+
+.instagram {
+    background-image: url(./assets/instagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 1s;
+}
+
+.facebook {
+    background-image: url(./assets/facebook.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 1s;
+}
+
+.twitter {
+    background-image: url(./assets/twitter.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 1s;
+}
+
+.pinterest {
+    background-image: url(./assets/pinterest.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 1s;
+}
+
+.footer-line {
+    background: rgba(102, 102, 102, 1);
+    height: 3px;
 }
