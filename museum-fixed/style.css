@@ -558,40 +558,76 @@ p {
     padding-top: 100px;
 }
 
-.tickets-content__box {
+/* .tickets-content__box {
     background-color: greenyellow;
-}
+} */
 
 .tickets-content__box p {
-font-weight: 700;
-font-size: 28px;
-line-height: 100%;
-letter-spacing: 0%;
-}
-
-.tickets-content__box fieldset {
-    background-color: mediumaquamarine;
-    height: 211px;
-    width: 270px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    background-color: yellow;
+    padding-top: 5px;
+    padding-left: 10px;
 }
 
 .tickets-content__type  {
-    padding-top: 50px;
+    height: 211px;
+    width: 270px;
+    padding-top: 25px;
+    padding-left: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
+    background-color: aqua;
 }
 
 .tickets-content__type label {
     font-family: Roboto;
-font-weight: 300;
-font-size: 22px;
-line-height: 100%;
-letter-spacing: 0%;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
 }
 
 .tickets-content__widget {
     background-color: plum;
+}
+
+.tickets-content__widget p {
+    background-color: greenyellow;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.tickets-content__widget-button {
+    width: 175px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #030303;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 2px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tickets-content__widget-button:hover {
+    background-color: rgba(157, 134, 101, 1);
+    color: #030303;
+    transition: 0.5s;
+}
+
+.tickets-content__widget-amount {
+    background-color: purple;
 }
 
 .tickets-content__img {
@@ -616,7 +652,6 @@ letter-spacing: 0%;
 #contacts .background-container {
     position: relative;
     padding-bottom: 75px;
-    background-color: palegreen;
 }
 
 #contacts h2 {
