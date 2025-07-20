@@ -169,6 +169,7 @@ p {
     display: flex;
     padding-top: 52px;
     padding-bottom: 60px;
+    position: relative;
 }
 
 .welcome-content {
@@ -248,7 +249,7 @@ p {
     background-color: var(--bg-dark);
     position: absolute;
     bottom: 0px;
-    left: 1080px;
+    left: 840px;
 }
 
 .welcome-slider__num {
