@@ -562,12 +562,11 @@ p {
     font-size: 28px;
     line-height: 100%;
     letter-spacing: 0%;
-    background-color: yellow;
     padding-top: 5px;
     padding-left: 10px;
 }
 
-.tickets-content__type  {
+.tickets-content__type {
     height: 211px;
     width: 270px;
     padding-top: 25px;
@@ -576,7 +575,18 @@ p {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: aqua;
+}
+
+.tickets-content__type-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    width: 260px;
+}
+
+.tickets-content__type-box div {
+    padding-right: 25px;
 }
 
 .tickets-content__type label {
