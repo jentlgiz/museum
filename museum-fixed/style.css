@@ -644,17 +644,25 @@ p {
 /* parallax section */
 
 #parallax .background-container {
+    height: 400px;
+}
+
+.parallax-content {
     background-image: url(./assets/images/parallax.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px;
-    background-position-x: left;
-    background-position-y: 71%;
+    /* height: 100vh; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* contacts section */
 
 #contacts .background-container {
+    background-color: #FFFFFF;
     position: relative;
     padding-bottom: 75px;
 }
@@ -702,7 +710,6 @@ p {
     height: 195px;
     padding-top: 40px;
 }
-
 
 .contacts-content__info p {
     font-weight: 300;
