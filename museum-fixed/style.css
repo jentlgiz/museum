@@ -252,30 +252,35 @@ p {
     left: 840px;
 }
 
-.welcome-slider__num-text {
-    background-color: greenyellow;
-}
-
 .welcome-slider__num {
-    background-color: green;
+    display: flex;
+    padding-left: 15px;
+    justify-content: space-around;
+    width: 100px;
+    height: 40px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: var(--white);
 }
 
 .welcome-slider__carousel {
     display: flex;
-    background-color: yellow;
-}
-
-.welcome-slider__carousel div {
-    margin-right: 12px;
-    margin-left: 13px;
+    width: 180px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 5px;
 }
 
 .welcome-slider__tap {
     display: flex;
     justify-content: space-around;
-    width: 80px;
+    width: 110px;
     height: 8px;
-    background-color: plum;
+    cursor: pointer;
 }
 
 /* visitiing section */
@@ -885,7 +890,6 @@ input::-webkit-inner-spin-button {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: green;
     height: 127px;
     font-family: Roboto;
     font-weight: 200;
