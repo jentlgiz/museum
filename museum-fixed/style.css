@@ -668,31 +668,45 @@ p {
 }
 
 .contacts-content {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 95px;
+    grid-row-gap: 0px;
     padding-top: 105px;
-    background-color: sienna;
 }
 
 .contacts-content__list {
-    background-color: lawngreen;
-    width: 282px;
-    height: 244px;
+    height: 282px;
+}
+
+.contacts-content__list-title {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-content__list-title span:first-child {
+    padding-bottom: 2px;
+}
+
+.contacts-content__info {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    height: 195px;
+    padding-top: 40px;
 }
 
-.contacts-content__list p {
+
+.contacts-content__info p {
     font-weight: 300;
     font-size: 22px;
-    line-height: 100%;
-    letter-spacing: 0%;
-}
-
-.contacts-content__title {
-    font-weight: 500;
-    font-size: 28px;
     line-height: 100%;
     letter-spacing: 0%;
 }
