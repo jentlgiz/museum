@@ -252,20 +252,17 @@ p {
     left: 840px;
 }
 
+.welcome-slider__num-text {
+    background-color: greenyellow;
+}
+
 .welcome-slider__num {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 22px;
-    line-height: 40px;
-    vertical-align: middle;
-    text-transform: uppercase;
-    width: 76px;
-    height: 40px;
-    color: rgba(255, 255, 255, 1);
+    background-color: green;
 }
 
 .welcome-slider__carousel {
     display: flex;
+    background-color: yellow;
 }
 
 .welcome-slider__carousel div {
@@ -278,6 +275,7 @@ p {
     justify-content: space-around;
     width: 80px;
     height: 8px;
+    background-color: plum;
 }
 
 /* visitiing section */
@@ -509,7 +507,7 @@ p {
     height: 2035px;
     overflow: hidden;
     column-count: 3;
-    column-gap: 2px;
+    column-gap: 32px;
     column-width: 30%;
     padding-top: 76px;
 }
@@ -523,7 +521,7 @@ p {
 
 .gallery-content__column-1,
 .gallery-content__column-3 {
-    padding-top: 55px;
+    padding-top: 48px;
 }
 
 .gallery-content img {
