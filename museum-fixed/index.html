@@ -54,9 +54,7 @@
               </button>
             </div>
             <div class="welcome-image"></div>
-          </div>
-        </div>
-        <div class="welcome-slider">
+            <div class="welcome-slider">
           <div class="welcome-slider__num">
             <p>01</p>
             <p>|</p>
@@ -144,6 +142,8 @@
                 fill="white"
               />
             </svg>
+          </div>
+        </div>
           </div>
         </div>
       </section>
@@ -246,6 +246,7 @@
                     <div class="explore-img__slider"><svg width="39" height="700" viewBox="0 0 39 700" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.5 365C27.5081 365 34 358.508 34 350.5C34 342.492 27.5081 336 19.5 336C11.4919 336 5 342.492 5 350.5C5 358.508 11.4919 365 19.5 365ZM19.5 370C30.2696 370 39 361.27 39 350.5C39 339.73 30.2696 331 19.5 331C8.73045 331 0 339.73 0 350.5C0 361.27 8.73045 370 19.5 370Z" fill="white"/><path d="M17 0H22V332H17V0Z" fill="white"/><path d="M17 368H22V700H17V368Z" fill="white"/></svg></div>
                     <div class="explore-img__after"></div>
             </div>
+          </div>
         </div>
         </section>
          <section id="video">
@@ -279,6 +280,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
             </div>
         </section>
@@ -318,42 +320,54 @@
                 <div class="tickets-content">
                     <div class="tickets-content__img"></div>
                     <div class="tickets-content__box">
-                        <fieldset>
                           <p>Ticket Type</p>
                           <div class="tickets-content__type">
-                            <div>
-                                <input type="radio" id="first-type" value="" checked />
-                                <label for="first-type">Permanent exhibition</label>
+                            <div class="tickets-content__type-box">
+                                <div><input type="radio" id="permanent-type" value=""></div>
+                                <label for="permanent-type">Permanent exhibition</label>
                             </div>
-                            <div><input type="radio" id="second-type" value="" />
-                                <label for="second-type">Temporary exhibition</label>
+                            <div class="tickets-content__type-box">
+                              <div>
+                                <input type="radio" id="temporary-type" value="">
+                              </div>
+                                <label for="temporary-type">Temporary exhibition</label>
                             </div>
-                            <div>
-                                <input type="radio" id="third-type" value="" />
-                                <label for="third-type">Combined Admission</label>
+                            <div class="tickets-content__type-box">
+                                <div><input type="radio" id="combined-type" value=""></div>
+                                <label for="combined-type">Combined Admission</label>
                             </div>
                             </div>
-                        </fieldset>
                     </div>
                     <div class="tickets-content__widget">
                         <p>Amount</p>
-                        <label for="ticketNum">Basic 18+</label>
-                        <input id="ticketNum" type="number" name="ticketNum" value="0" />
-                        <label for="ticketNum">Senior 65+</label>
-                        <input id="ticketNum" type="number" name="ticketNum" value="0" />
-                        <p>Total €</p>
-                        <p>220</p>
-                        <button>Buy Now</button>
+                        <div class="tickets-content__widget-amount">
+                          <div class="tickets-content__widget-basic">
+                        <label for="basicNum">Basic 18+</label>
+                        <div class="tickets-content__widget-button">
+                        <button class="minus"><svg width="16" height="3" viewBox="0 0 16 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.6875 2.82812H0.03125V0.46875H15.6875V2.82812Z" fill="black"/></svg></button>
+                        <input id="basicNum" type="number" name="basicNum" value="1">
+                         <button class="plus"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.89062 6.79688H16.2344V9.53125H9.89062V16.7188H6.98438V9.53125H0.640625V6.79688H6.98438V0.15625H9.89062V6.79688Z" fill="black"/></svg></button></div>
+                      </div>
+                      <div class="tickets-content__widget-senior">
+                        <label for="seniorNum">Senior 65+</label>
+                        <div class="tickets-content__widget-button">
+                        <button class="minus"><svg width="16" height="3" viewBox="0 0 16 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.6875 2.82812H0.03125V0.46875H15.6875V2.82812Z" fill="black"/></svg></button>
+                        <input id="seniorNum" type="number" name="seniorNum" value="1">
+                         <button class="plus"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.89062 6.79688H16.2344V9.53125H9.89062V16.7188H6.98438V9.53125H0.640625V6.79688H6.98438V0.15625H9.89062V6.79688Z" fill="black"/></svg></button></div>
+                         </div>
+                      </div>
+                        <h4 class="tickets-content__total">Total €220</h4>
+                        <button class="tickets-content__total-button">Buy Now</button>
                     </div>
                 </div>
             </div>
             </div>
         </section>
-        <section id="parallax">
+        <div id="parallax">
             <div class="background-container">
-            <div class="container"></div>
+            <div class="parallax-content"></div>
             </div>
-        </section>
+          </div>
         <section id="contacts">
             <div class="background-container">
             <div class="container">
@@ -361,10 +375,15 @@
               <div class="line"></div>
               <div class="contacts-content">
                 <div class="contacts-content__list">
-                  <p class="contacts-content__title">Palais Royal Musee du Louvre</p>
+                  <h4 class="contacts-content__list-title">
+                    <span>Palais Royal</span>
+                    <span>Musee du Louvre</span>
+                  </h4>
+                  <div class="contacts-content__info">
                   <p>address: 75001 Paris, France</p>
                   <p>phone: +33(0) 1 40 20 50 50</p>
                   <p>mail: info@louvre.fr</p>
+                  </div>
                 </div>
                 <img src="./assets/images/map.png" alt="">
               </div>
@@ -382,16 +401,29 @@
         <nav class="header-nav">
             <ul class="header-nav__list">
               <li><a href="#visit">Visiting</a></li>
-              <li><a href="#explore">Explore</a></li>
-              <li><a href="#video">Video</a></li>
               <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#explore">Explore</a></li>
               <li><a href="#tickets">Tickets</a></li>
+              <li><a href="#video">Video</a></li>
               <li><a href="#contacts">Contacts</a></li>
             </ul>
           </nav>
-        <div class="footer-socials"></div>
+        <div class="footer__socials">
+          <ul>
+            <li><a href="#"><div class="youtube"></div></a></li>
+            <li><a href="#"><div class="instagram"></div></a></li>
+            <li><a href="#"><div class="facebook"></div></a></li>
+            <li><a href="#"><div class="twitter"></div></a></li>
+            <li><a href="#"><div class="pinterest"></div></a></li>
+          </ul>
+        </div>
       </div>
       <div class="footer-line"></div>
+      <div class="footer__string">
+        <div class="year">© 2025</div>
+        <div class="rolling-scopes">The Rolling Scopes School</div>
+        <div class="username">Username</div>
+      </div>
     </div>
     </footer>
   </body>
