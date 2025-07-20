@@ -321,32 +321,38 @@
                           <p>Ticket Type</p>
                           <div class="tickets-content__type">
                             <div>
-                                <input type="radio" id="first-type" value="" checked />
-                                <label for="first-type">Permanent exhibition</label>
+                                <input type="radio" id="permanent-type" value="" checked />
+                                <label for="permanent-type">Permanent exhibition</label>
                             </div>
-                            <div><input type="radio" id="second-type" value="" />
-                                <label for="second-type">Temporary exhibition</label>
+                            <div><input type="radio" id="temporary-type" value="" />
+                                <label for="temporary-type">Temporary exhibition</label>
                             </div>
                             <div>
-                                <input type="radio" id="third-type" value="" />
-                                <label for="third-type">Combined Admission</label>
+                                <input type="radio" id="combined-type" value="" />
+                                <label for="combined-type">Combined Admission</label>
                             </div>
                             </div>
                     </div>
                     <div class="tickets-content__widget">
                         <p>Amount</p>
                         <div class="tickets-content__widget-amount">
-                          <div class="tickets-content__widget-type">
+                          <div class="tickets-content__widget-basic">
                         <label for="ticketNum">Basic 18+</label>
-                        <input id="ticketNum" type="number" name="ticketNum" value="0" />
+                        <div class="tickets-content__widget-button">
+                        <button class="minus"><svg width="16" height="3" viewBox="0 0 16 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.6875 2.82812H0.03125V0.46875H15.6875V2.82812Z" fill="black"/></svg></button>
+                        <input id="basicNum" type="number" name="basicNum" value="1" />
+                         <button class="plus"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.89062 6.79688H16.2344V9.53125H9.89062V16.7188H6.98438V9.53125H0.640625V6.79688H6.98438V0.15625H9.89062V6.79688Z" fill="black"/></svg></button></div>
                       </div>
-                      <div class="tickets-content__widget-type">
+                      <div class="tickets-content__widget-senior">
                         <label for="ticketNum">Senior 65+</label>
-                        <input id="ticketNum" type="number" name="ticketNum" value="0" />
+                        <div class="tickets-content__widget-button">
+                        <button class="minus"><svg width="16" height="3" viewBox="0 0 16 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.6875 2.82812H0.03125V0.46875H15.6875V2.82812Z" fill="black"/></svg></button>
+                        <input id="seniorNum" type="number" name="seniorNum" value="1" />
+                         <button class="plus"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.89062 6.79688H16.2344V9.53125H9.89062V16.7188H6.98438V9.53125H0.640625V6.79688H6.98438V0.15625H9.89062V6.79688Z" fill="black"/></svg></button></div>
+                         </div>
                       </div>
-                        </div>
-                        <p>Total € 220</p>
-                        <button class="tickets-content__widget-button">Buy Now</button>
+                        <h4 class="tickets-content__total">Total € 220</h4>
+                        <button class="tickets-content__total-button">Buy Now</button>
                     </div>
                 </div>
             </div>
